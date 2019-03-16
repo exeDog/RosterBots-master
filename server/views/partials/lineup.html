@@ -1,0 +1,57 @@
+<h2>Lineup sorted by Overall Stats</h2>
+<div class="Roster">
+    <div>
+        <div ng-if="players.length > 0">
+            <div class="squad-content">
+                <h3>Main Lineup</h3>
+                <div class="cardlineup" ng-repeat="player in players | orderBy:'-total' | limitTo:'10'">
+                    <div class="data">
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Name</p>
+                                <p class="name">[[player.name]]</p>
+                            </div>
+                        </div>
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Total</p>
+                                <p class="name">[[player.total]]</p>
+                            </div>
+                        </div>
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Salary</p>
+                                <p class="name">[[player.salary]]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="squad-content" ng-if="players.length > 10">
+                <h3>Substitutes</h3>
+                <div class="cardlineup" ng-repeat="player in substitutes | orderBy:'total'">
+                    <div class="data">
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Name</p>
+                                <p class="name">[[player.name]]</p>
+                            </div>
+                        </div>
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Total</p>
+                                <p class="name">[[player.total]]</p>
+                            </div>
+                        </div>
+                        <div class="name-container">
+                            <div class="content">
+                                <p class="name-tag">Salary</p>
+                                <p class="name">[[player.salary]]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roster Bots</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="16x16" />
+    <!-- css dependencies -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body ng-app="rosterApp">
+<div class="site-wrapper" ng-controller="mainCtrl">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div ng-include="'partials/header'"></div>
+            <div ng-view=""></div>
+            <div ng-include="'partials/footer'"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!-- Required JavaScripts -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="/node_modules/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="/node_modules/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="/angular/rosterApp.js"></script>
+<script type="text/javascript" src="/angular/factory/system.js"></script>
+<script type="text/javascript" src="/angular/controllers/mainCtrl.js"></script>
+<script type="text/javascript" src="/angular/controllers/playerCtrl.js"></script>
+<script type="text/javascript" src="/angular/controllers/lineupCtrl.js"></script>
+</html>
